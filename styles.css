@@ -1,4 +1,4 @@
-/* HEADER PRINCIPAL */
+
 header {
   position: fixed;
   top: 0;
@@ -101,3 +101,25 @@ th {
   font-weight: bold; 
   font-family:"Lugrasimo", cursive ;
 }
+
+.botonesAbout{
+  background-color: #300000;
+  color: #a3a1a1;
+  font-size: 16px;
+  border: 2px solid #300000;
+  border-radius: 5px;
+  padding: 5px 10px;
+  appearance: none; 
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  transition: 0.3s ease;
+}
+
+.botonesAbout:hover{
+  border-color: #3b1818;
+  background-color: #3b3b3b;
+}
+
+

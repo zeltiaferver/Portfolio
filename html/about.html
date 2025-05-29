@@ -10,49 +10,79 @@
     <title>Zeltia's Portfolio</title>
 </head>
 <body>
-    <header>
+   <header>
      Zeltia Veres
     <div id="translator">
-     <button id="en">ENG</button>
-     <button id="es">ESP</button>
-     <button id="gal">GAL</button>
+     <button onclick="traducir('eng')">ENG</button>
+     <button onclick="traducir('es')">ESP</button>
+     <button onclick="traducir('gal')">GAL</button>
     </div>
     <nav>
     <ul>
-    <li><a href="../index.html">Home</a></li>
-    <li><a href="works.html">Works</a></li>
-    <li><a href="contacto.html">Contact</a></li>
-    <li><a href="about.html">About</a></li>
+   <li><a href="../index.html" data-es="Inicio" data-eng="Home" data-gal="Inicio">Home</a></li>
+    <li><a href="works.html" data-es="Proyectos" data-eng="Projects" data-gal="Proxectos">Projects</a></li>
+    <li><a href="contacto.html" data-es="Contacto" data-eng="Contact" data-gal="Contacto">Contact</a></li>
+    <li><a href="about.html" data-es="Sobre mi" data-eng="About" data-gal="Sobre min">About</a></li>
     </ul>
 </nav>
     </header>
 
-    <table>
-    <thead>
-       <tr>
-      <th>About me!</th>
-      <td>Web Developer & Designer from Galicia, Spain</td>
-      <td>FOTO o algo</td>
+ <table>
+  <thead>
+    <tr>
+      <th>
+        <button class="botonesAbout" id="boton1"
+          data-es="Sobre mi!" data-eng="About me!" data-gal="Sobre min!">
+          About me!
+        </button>
+      </th>
+      <td data-es="Desarrolladora Web y Diseñadora de Galicia"
+          data-eng="Web Developer & Designer from Galicia, Spain"
+          data-gal="Desarrolladora Web e Diseñadora">
+        <div id="aboutText">Web Developer & Designer from Galicia, Spain
+      </td>
       
-    </tr>  
-    </thead>
-   
+    </div>
+    </tr>
+  </thead>
+
   <tbody>
     <tr>
-    <th>Education:</th>
-      <td></td>
-   
+      <th>
+        <button class="botonesAbout" id="boton2"
+          data-es="Formación:" data-eng="Education:" data-gal="Formación:">
+          Education:
+        </button>
+      </th>
+      <td>
+        <div id="educationText" style="display: none;">IES San Andrés</div>
+      </td>
     </tr>
     <tr>
-      <th>Work experience:</th>
-         <td>Dato 3</td>
+      <th>
+        <button class="botonesAbout" id="boton3"
+          data-es="Experiencia:" data-eng="Work experience:" data-gal="Experiencia:">
+          Work experience:
+        </button>
+      </th>
+      <td>
+        <div id="workText" style="display: none;">Intern</div>
+      </td>
     </tr>
-     <tr>
-      <th>Skills:</th>
-         <td>Dato 3</td>
+    <tr>
+      <th>
+        <button class="botonesAbout" id="boton4"
+          data-es="Habilidades:" data-eng="Skills:" data-gal="Habilidades:">
+          Skills:
+        </button>
+      </th>
+      <td>
+        <div id="skillsText" style="display: none;">a</div>
+      </td>
     </tr>
-</tbody>
+  </tbody>
 </table>
+
 
 <footer>
 
