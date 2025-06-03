@@ -3,6 +3,37 @@
  * 
  */
 
+async function loadTranslations(lang) {
+  try {
+    const response = await fetch(`translations/${lang}.json`);
+    if (!response.ok) throw new Error('No se pudo cargar el archivo de idioma');
+    const translations = await response.json();
+
+    
+    document.querySelectorAll('[data-i18n]').forEach(el => {
+      const key = el.getAttribute('data-i18n');
+      if (translations[key]) {
+        el.textContent = translations[key];
+      }
+    });
+  } catch (error) {
+    console.error('Error al cargar traducción:', error);
+  }
+}
+
+
+function setLanguage(lang) {
+  loadTranslations(lang);
+  
+  localStorage.setItem('preferredLanguage', lang);
+}
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  const savedLang = localStorage.getItem('preferredLanguage') || 'en';
+  setLanguage(savedLang);
+});
+
 
   /**
    * botones para enseñar u ocultar los textos de AboutMe
@@ -19,10 +50,10 @@ const mail = document.getElementById("email");
 mail.addEventListener("click", () => {
  mostrarFormu();
 });
-botonFormulario.addEventListener("click", () => {
-  enviarEMail();
+document.getElementById('formulario').addEventListener('submit', function(e) {
+  e.preventDefault(); 
+  enviarEmail();
 });
-
 function mostrarFormu(){
   document.getElementById("contacto").style.display = "none";
  document.getElementById("emailFormulario").style.display = "block";
@@ -47,3 +78,4 @@ function mostrarDiv(idDiv) {
         section.style.display = (section.id === idDiv) ? 'block' : 'none';
       });
     }
+
