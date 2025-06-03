@@ -29,7 +29,7 @@ function mostrarFormu(){
 };
 
 function enviarEmail(){
-  const form = document.getElementById('emailFormulario');
+  const form = document.getElementById('formulario');
 
   emailjs.sendForm('service_j8tpg7l', 'template_conx9a3', form)
     .then(function () {
