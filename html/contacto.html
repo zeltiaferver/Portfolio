@@ -12,25 +12,48 @@
 <body>
     <header>
      Zeltia Veres
-    <div id="translator">
-     <button id="es">ESP</button>
-     <button id="gal">GAL</button>
+     <div id="translator">
+     <button>ENG</button>
+     <button>ESP</button>
+     <button>GAL</button>
     </div>
     <nav>
     <ul>
-    <li><a href="../index.html">Home</a></li>
-    <li><a href="works.html">Works</a></li>
-    <li><a href="contacto.html">Contact</a></li>
-    <li><a href="about.html">About</a></li>
+   <li><a href="../index.html" >Home</a></li>
+    <li><a href="works.html">Projects</a></li>
+    <li><a href="contacto.html" >Contact</a></li>
+    <li><a href="about.html" >About</a></li>
     </ul>
 </nav>
     </header>
+    <div id="contenedorMail">
+<h3 id="contactoTexto">¡Contacta conmigo por redes sociales o mándame un mail!📨</h3>
 
+    <div id="contacto">
+        
+       <a href="https://www.linkedin.com/in/zeltia-ferreiro-veres-4b976026a?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BdnPFCswoTU6lIRt7Qhrxdg%3D%3D">
+        <img id="linkedin" class="redes" src="../img/linkedinIcon.png"/></a>
+       <a href="https://github.com/zeltiaferver"> <img id="github" class="redes" src="../img/githubIcon.png"/></a>
+        <img id="email" class="redes"  src="../img/mailIcon.png"/>
+    </div>
+    <div id="emailFormulario">
+        <form id="formulario">
+        <input type="text" name="user_name" placeholder="Tu nombre" id="inputNombre" required><br>
+        <input type="email" name="user_email" placeholder="Tu correo" id="inputCorreo" required><br>
+        <textarea name="message" placeholder="¡Escríbeme un mensaje!✨" required></textarea><br>
+        <button type="submit" id="botonFormulario">Enviar</button>
+        </form>
 
+    </div>
+</div>
 
 <footer>
 
 </footer>
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script>
+  emailjs.init("6jRXhtTbvYgEz5kRh"); 
+</script>
 <script src="../scripts.js"></script>
 </body>
 </html>
