@@ -19,10 +19,10 @@ const mail = document.getElementById("email");
 mail.addEventListener("click", () => {
  mostrarFormu();
 });
-botonFormulario.addEventListener("click", () => {
-  enviarEMail();
+document.getElementById('formulario').addEventListener('submit', function(e) {
+  e.preventDefault(); 
+  enviarEmail();
 });
-
 function mostrarFormu(){
   document.getElementById("contacto").style.display = "none";
  document.getElementById("emailFormulario").style.display = "block";
