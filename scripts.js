@@ -1,14 +1,8 @@
 /**
  * funcion para traducir
- * @param {} idioma 
+ * 
  */
-function traducir(idioma) {
-    const elementos = document.querySelectorAll(`[data-${idioma}]`);
-    
-    elementos.forEach(el => {
-      el.textContent = el.getAttribute(`data-${idioma}`);
-    });
-  }
+
 
   /**
    * botones para enseñar u ocultar los textos de AboutMe
@@ -18,28 +12,37 @@ function traducir(idioma) {
 const boton2 = document.getElementById("boton2");
 const boton3 = document.getElementById("boton3");
 const boton4 = document.getElementById("boton4");
+const botonFormulario = document.getElementById("botonFormulario");
+const mail = document.getElementById("email");
 
-boton1.addEventListener("click", mostrarAbout);
-boton2.addEventListener("click", mostrarEducacion);
-boton3.addEventListener("click", mostrarExperiencia);
-boton4.addEventListener("click", mostrarSkills);
 
-function mostrarAbout() {
-  mostrarSolo("aboutText");
-}
-function mostrarEducacion() {
-  mostrarSolo("educationText");
-}
-function mostrarExperiencia() {
-  mostrarSolo("workText");
-}
-function mostrarSkills() {
-  mostrarSolo("skillsText");
-}
+mail.addEventListener("click", () => {
+ mostrarFormu();
+});
 
-function mostrarSolo(idVisible) {
-  const ids = ["aboutText", "educationText", "workText", "skillsText"];
-  ids.forEach(id => {
-    document.getElementById(id).style.display = (id === idVisible) ? "block" : "none";
-  });
-}
+
+
+
+function mostrarFormu(){
+  document.getElementById("contacto").style.display = "none";
+ document.getElementById("emailFormulario").style.display = "block";
+};
+
+
+botonFormulario.addEventListener("click", () => {
+  enviarEMail();
+});
+
+function enviarEmail(){
+  const form = document.getElementById('emailFormulario');
+
+
+  emailjs.sendForm('service_j8tpg7l', 'template_conx9a3', form)
+    .then(function () {
+      alert('Correo enviado correctamente');
+      form.reset();
+    }, function (error) {
+      console.error('Error al enviar:', error);
+      alert('Error al enviar el correo');
+    });
+  }
