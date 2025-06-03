@@ -1,0 +1,23 @@
+{
+  "nav_home": "Inicio",
+  "nav_projects": "Proyectos",
+  "nav_contact": "Contacto",
+  "nav_about": "Sobre mí",
+
+  "projects_title": "¡Últimos Proyectos! 💻",
+  "project_maps": "Mapas",
+  "project_calculredes": "Calcularedes",
+  "project_memorium": "Memorium",
+
+  "about_title": "Conóceme un poco más",
+  "about_me_button": "¡Sobre mí!",
+  "education_button": "Educación",
+  "experience_button": "Experiencia laboral",
+  "skills_button": "Habilidades",
+
+  "about_intro": "¡Hola! Soy Zeltia...",
+  "education_title": "Técnico superior en Desarrollo de Aplicaciones Web",
+  "experience_title": "Prácticas",
+  "skills_hard": "Java, JavaScript, HTML, CSS, SQL, Linux, Administración de Sistemas",
+  "skills_soft": "Pensamiento crítico y creativo, Trabajo en equipo, Proactividad"
+}

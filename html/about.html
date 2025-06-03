@@ -1,74 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link rel="stylesheet" href="../styles.css">
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Amarante&family=Lugrasimo&display=swap" rel="stylesheet">
-    <title>Zeltia's Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Amarante&family=Lugrasimo&display=swap" rel="stylesheet" />
+  <title>Zeltia's Portfolio</title>
 </head>
 <body>
    <header>
-     Zeltia Veres
+    <span data-i18n="name">Zeltia Veres</span>
     <div id="translator">
-     <button>ENG</button>
-     <button>ESP</button>
-     <button>GAL</button>
+      <button onclick="setLanguage('en')">ENG</button>
+      <button onclick="setLanguage('es')">ESP</button>
+      <button onclick="setLanguage('gal')">GAL</button>
     </div>
     <nav>
-    <ul>
-   <li><a href="../index.html">Home</a></li>
-    <li><a href="works.html" >Projects</a></li>
-    <li><a href="contacto.html">Contact</a></li>
-    <li><a href="about.html">About</a></li>
-    </ul>
-</nav>
-    </header>
-<div id="contenedorBoton">
-  <button class="botonesAbout" onclick="mostrarDiv('aboutText')">About me!</button>
-  <button class="botonesAbout" onclick="mostrarDiv('educationText')">Education</button>
-  <button class="botonesAbout" onclick="mostrarDiv('workText')">Work experience</button>
-  <button class="botonesAbout" onclick="mostrarDiv('skillsText')">Skills</button>
+      <ul>
+        <li><a href="../index.html" data-i18n="nav_home">Home</a></li>
+        <li><a href="works.html" data-i18n="nav_projects">Projects</a></li>
+        <li><a href="contacto.html" data-i18n="nav_contact">Contact</a></li>
+        <li><a href="about.html" data-i18n="nav_about">About</a></li>
+      </ul>
+    </nav>
+  </header>
 
-  <h2>Get to know me a little more!</h2>
+  <div id="contenedorBoton">
+    <button class="botonesAbout" onclick="mostrarDiv('aboutText')" data-i18n="btn_about">About me!</button>
+    <button class="botonesAbout" onclick="mostrarDiv('educationText')" data-i18n="btn_education">Education</button>
+    <button class="botonesAbout" onclick="mostrarDiv('workText')" data-i18n="btn_work">Work experience</button>
+    <button class="botonesAbout" onclick="mostrarDiv('skillsText')" data-i18n="btn_skills">Skills</button>
 
-  <div id="aboutText" class="content-section">
-    <h3>Junior Web Developer & Designer from Galicia, Spain.☀️</h3>
-    <p>
-      Hi! I'm Zeltia! I'm located in Spain and passionate about creating beautiful, functional websites.
-      I enjoy combining my background in Fine Arts with web development to deliver unique digital experiences.
-      Always eager to learn and grow in the tech world!
-    </p>
-  </div>
+    <h2 data-i18n="headline">Get to know me a little more!</h2>
 
-  <div id="educationText" class="content-section">
-     <h3>High Technician degree in Web App Development</h3>
-      <p>IES San Andrés. 2024-Present</p>
-       <h3>Fine Arts Degree</h3>
-      <p>Salamanca University. 2020-2023</p>
+    <div id="aboutText" class="content-section">
+      <h3 data-i18n="about_title">Junior Web Developer & Designer from Galicia, Spain.☀️</h3>
+      <p data-i18n="about_desc">
+        Hi! I'm Zeltia! I'm located in Spain and passionate about creating beautiful, functional websites.
+        I enjoy combining my background in Fine Arts with web development to deliver unique digital experiences.
+        Always eager to learn and grow in the tech world!
+      </p>
     </div>
 
-  <div id="workText" class="content-section">
-      <h3>Internship</h3>
-      <p>IES San Andrés. May-June 2025</p>
-      
-  </div>
-
-  <div id="skillsText" class="content-section">
-    <h3>Hard Skills</h3>
-      <p>Java, JavaScript, HTML, CSS, SQL, Linux, IT Admin</p>
-       <h3>Soft Skills</h3>
-      <p>Critical and Creative Thinking, Team Working, Proactivity </p>
+    <div id="educationText" class="content-section">
+      <h3 data-i18n="edu_title1">High Technician degree in Web App Development</h3>
+      <p data-i18n="edu_desc1">IES San Andrés. 2024-Present</p>
+      <h3 data-i18n="edu_title2">Fine Arts Degree</h3>
+      <p data-i18n="edu_desc2">Salamanca University. 2020-2023</p>
     </div>
 
-</div>
+    <div id="workText" class="content-section">
+      <h3 data-i18n="work_title">Internship</h3>
+      <p data-i18n="work_desc">IES San Andrés. May-June 2025</p>
+    </div>
 
+    <div id="skillsText" class="content-section">
+      <h3 data-i18n="skills_hard">Hard Skills</h3>
+      <p data-i18n="skills_hard_list">Java, JavaScript, HTML, CSS, SQL, Linux, IT Admin</p>
+      <h3 data-i18n="skills_soft">Soft Skills</h3>
+      <p data-i18n="skills_soft_list">Critical and Creative Thinking, Team Working, Proactivity</p>
+    </div>
+  </div>
 
-<footer>
-
-</footer>
+  <footer></footer>
 <script src="../scripts.js"></script>
 </body>
 </html>
