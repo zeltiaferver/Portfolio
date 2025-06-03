@@ -92,47 +92,54 @@ body {
   height: 100vh;
   display: flex;
   justify-content: center;  
-  align-items: center;      
+  align-items: center;   
+  font-family: "Lugrasimo", cursive;   
 }
 
-table {
-  width: 60%;
-  border-collapse: collapse;
-  text-align: center;
-  
-}
+ #contenedorBoton {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      width: 100%;
+      height: 120px; 
+      max-width: 600px;
+      margin-bottom: 20px;
+    }
 
-th, td {
-  padding: 10px 20px;
+    .botonesAbout {
+      padding: 10px 15px;
+      cursor: pointer;
+      background-color:  #300000;
+      border: none;
+      color: white;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+       font-family: "Lugrasimo", cursive ;
+    }
 
-  text-align: center;
-  vertical-align: middle;
-}
+    .botonesAbout:hover {
+      background-color: #5e0b0b;
+    }
 
-th {
-  font-weight: bold; 
-  font-family:"Lugrasimo", cursive ;
-}
+    .content-section {
+      display: none;
+      padding: 15px;
+      border-radius: 8px;
+      background-color: transparent;
+       font-family: "Lugrasimo", cursive ;
+       font-weight: bold;
+       min-height: 10px;
+       max-width: 80%;
+       position: fixed;
+       margin-top: 90px;
+      text-align: justify;
+    }
 
-.botonesAbout{
-  background-color: #300000;
-  color: #a3a1a1;
-  font-size: 16px;
-  border: 2px solid #300000;
-  border-radius: 5px;
-  padding: 5px 10px;
-  appearance: none; 
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  cursor: pointer;
-  box-shadow: 0 0 10px rgba(0,0,0,0.5);
-  transition: 0.3s ease;
-}
+    .content-section.active {
+      display: block;
+    }
 
-.botonesAbout:hover{
-  border-color: #3b1818;
-  background-color: #3b3b3b;
-}
 
 #contenedorMail {
   display: flex;
@@ -244,5 +251,5 @@ min-height: 100px;
     text-decoration: underline;
   }
   #listaProyectos {
-  margin-top: 150px; 
+  margin-top: 220px; 
   }
