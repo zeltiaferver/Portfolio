@@ -31,5 +31,7 @@
   "skills_hard": "Habilidades técnicas",
   "skills_hard_list": "Java, JavaScript, HTML, CSS, SQL, Linux, Administración de sistemas",
   "skills_soft": "Habilidades blandas",
-  "skills_soft_list": "Pensamiento crítico y creativo, trabajo en equipo, proactividad"
+  "skills_soft_list": "Pensamiento crítico y creativo, trabajo en equipo, proactividad",
+  "project_portfolio": "Este Portfolio",
+  "repositorio": "Repositorio"
 }
