@@ -3,34 +3,38 @@
  * 
  */
 
+function setLanguage(lang) {
+  localStorage.setItem('lang', lang);
+  loadTranslations(lang);
+}
+
 async function loadTranslations(lang) {
   try {
-    const response = await fetch(`translations/${lang}.json`);
-    if (!response.ok) throw new Error('No se pudo cargar el archivo de idioma');
-    const translations = await response.json();
+    // Ajusta la ruta si guardas los JSON en otra carpeta
+    const res = await fetch(`../translations/${lang}.json`);
+    const translations = await res.json();
 
-    
     document.querySelectorAll('[data-i18n]').forEach(el => {
       const key = el.getAttribute('data-i18n');
       if (translations[key]) {
         el.textContent = translations[key];
       }
     });
+
+    // También actualiza atributos `placeholder` si los hay
+    if (translations.inputNombre)
+      document.getElementById("inputNombre").placeholder = translations.inputNombre;
+    if (translations.inputCorreo)
+      document.getElementById("inputCorreo").placeholder = translations.inputCorreo;
+    if (translations.textareaMensaje)
+      document.querySelector("textarea")?.setAttribute("placeholder", translations.textareaMensaje);
   } catch (error) {
-    console.error('Error al cargar traducción:', error);
+    console.error(`Error loading ${lang}.json:`, error);
   }
 }
 
-
-function setLanguage(lang) {
-  loadTranslations(lang);
-  
-  localStorage.setItem('preferredLanguage', lang);
-}
-
-
-document.addEventListener('DOMContentLoaded', () => {
-  const savedLang = localStorage.getItem('preferredLanguage') || 'en';
+window.addEventListener('DOMContentLoaded', () => {
+  const savedLang = localStorage.getItem('lang') || 'en';
   setLanguage(savedLang);
 });
 

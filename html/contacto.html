@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link rel="stylesheet" href="../styles.css">
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Amarante&family=Lugrasimo&display=swap" rel="stylesheet">
-    <title>Zeltia's Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Amarante&family=Lugrasimo&display=swap" rel="stylesheet" />
+  <title>Zeltia's Portfolio</title>
 </head>
 <body>
-     <header>
+  <header>
     <span data-i18n="name">Zeltia Veres</span>
     <div id="translator">
       <button onclick="setLanguage('en')">ENG</button>
       <button onclick="setLanguage('es')">ESP</button>
-      <button onclick="setLanguage('gal')">GAL</button>
+      <button onclick="setLanguage('gl')">GAL</button>
     </div>
     <nav>
       <ul>
@@ -26,34 +26,33 @@
       </ul>
     </nav>
   </header>
+  <main>
     <div id="contenedorMail">
-<h3 id="contactoTexto">Get in touch through social media or send me an email! 📨</h3>
-
-    <div id="contacto">
-
-        <a href="https://github.com/zeltiaferver" target="_blank"> <img id="github" class="redes" src="../img/githubIcon.png"/></a>
-       <a href="https://www.linkedin.com/in/zeltia-ferreiro-veres-4b976026a?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BdnPFCswoTU6lIRt7Qhrxdg%3D%3D" target="_blank">
-        <img id="linkedin" class="redes" src="../img/linkedinIcon.png"/></a>
-        <img id="email" class="redes"  src="../img/mailIcon.png"/>
-    </div>
-    <div id="emailFormulario">
+      <h3 id="contactoTexto" data-i18n="contact_text">Get in touch through social media or send me an email! 📨</h3>
+      <div id="contacto">
+        <a href="https://github.com/zeltiaferver" target="_blank">
+          <img id="github" class="redes" src="../img/githubIcon.png" />
+        </a>
+        <a href="https://www.linkedin.com/in/zeltia-ferreiro-veres" target="_blank">
+          <img id="linkedin" class="redes" src="../img/linkedinIcon.png" />
+        </a>
+        <img id="email" class="redes" src="../img/mailIcon.png" />
+      </div>
+      <div id="emailFormulario">
         <form id="formulario">
-        <input type="text" name="user_name" placeholder="Your name" id="inputNombre" required><br>
-        <input type="email" name="user_email" placeholder="Your email" id="inputCorreo" required><br>
-        <textarea name="message" placeholder="Send me a message!✨" required></textarea><br>
-        <button type="submit" id="botonFormulario">Enviar</button>
+          <input type="text" name="user_name" placeholder="Your name" id="inputNombre" required />
+          <input type="email" name="user_email" placeholder="Your email" id="inputCorreo" required />
+          <textarea name="message" placeholder="Send me a message!✨" id="textareaMensaje" required></textarea>
+          <button type="submit" id="botonFormulario" data-i18n="form_send">Enviar</button>
         </form>
-
+      </div>
     </div>
-</div>
-
-<footer>
-
-</footer>
-<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-<script>
-  emailjs.init("6jRXhtTbvYgEz5kRh"); 
-</script>
-<script src="../scripts.js"></script>
+  </main>
+  <footer>
+    <p>&copy; 2025 Zeltia Ferreiro</p>
+  </footer>
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script>emailjs.init("6jRXhtTbvYgEz5kRh");</script>
+  <script src="../scripts.js"></script>
 </body>
 </html>

@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link rel="stylesheet" href="../styles.css">
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Amarante&family=Lugrasimo&display=swap" rel="stylesheet">
-    <title>Zeltia's Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Amarante&family=Lugrasimo&display=swap" rel="stylesheet" />
+  <title>Zeltia's Portfolio</title>
 </head>
 <body>
-   <header>
+  <header>
     <span data-i18n="name">Zeltia Veres</span>
     <div id="translator">
       <button onclick="setLanguage('en')">ENG</button>
       <button onclick="setLanguage('es')">ESP</button>
-      <button onclick="setLanguage('gal')">GAL</button>
+      <button onclick="setLanguage('gl')">GAL</button>
     </div>
     <nav>
       <ul>
@@ -26,43 +26,42 @@
       </ul>
     </nav>
   </header>
+  <main>
+    <div id="listaProyectos">
+      <h3 data-i18n="projects_title">Last Projects! 💻</h3>
 
-  <div id="listaProyectos">
-    <h3>Last Projects! 💻</h3>
-
-    <div class="proyecto">
-    <a href="https://zeltiaferver.github.io/Proyecto3_D/" target="_blank">
-    <img src="../img/maps.png">
-    <div class="contenido">
-      <h3>Maps</h3>
-      </a>
+      <div class="proyecto">
+        <a href="https://zeltiaferver.github.io/Proyecto3_D/" target="_blank">
+          <img src="../img/maps.png" alt="Maps" />
+          <div class="contenido">
+            <h3 data-i18n="projects_maps">Maps</h3>
+        </a>
     </div>
-  </div> 
+      </div>
 
-<div class="proyecto">
-    <a href="https://zeltiaferver.github.io/Proyecto2_D/" target="_blank">
-    <img src="../img/calculRedes.png">
-    <div class="contenido">
-      <h3>Calculredes</h3>
-      </a>
+      <div class="proyecto">
+        <a href="https://zeltiaferver.github.io/Proyecto2_D/" target="_blank">
+          <img src="../img/calculRedes.png" alt="Calculredes" />
+          <div class="contenido">
+            <h3 data-i18n="projects_calcul">Calculredes</h3>
+          </a>
+        </div>
+      </div>
+
+      <div class="proyecto">
+        <a href="https://zeltiaferver.github.io/Memorium/" target="_blank">
+          <img src="../img/memorium.png" alt="Memorium" />
+          <div class="contenido">
+            <h3 data-i18n="projects_memorium">Memorium</h3>
+        </a>
+     </div>
+      </div>
     </div>
-    </div>
 
-  <div class="proyecto">
-    <a href="https://zeltiaferver.github.io/Memorium/" target="_blank">
-    <img src="../img/memorium.png">
-    <div class="contenido">
-      <h3>Memorium</h3>
-      </a>
-    </div>
-  </div>
-
-
-</div>
-
-<footer>
-
-</footer>
-<script src="../scripts.js"></script>
+  </main>
+  <footer>
+    <p>&copy; 2025 Zeltia Ferreiro</p>
+  </footer>
+  <script src="../scripts.js"></script>
 </body>
 </html>
