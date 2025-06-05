@@ -3,7 +3,7 @@ html {
 }
 
 body {
-  background-color: white;
+  background-color: #f7f1eb;;
   margin: 0;
   font-family: 'Times New Roman', Times, serif;
 }
@@ -96,6 +96,7 @@ h3 {
 .saludo{
   text-decoration: none;
   color: black;
+  font-weight: bold;
 }
 #hola{
   font-family: "Lugrasimo", cursive;
@@ -109,65 +110,89 @@ section {
 
 
 #divIndex {
-  padding-top: 190px;
-  background-color: white;
+  padding-top: 50vh;
+  background-color: #f7f1eb;;
   text-align: center;
 }
 
 #divWorks {
-  padding-top: 125px;
-  background-color: white;
+  padding-top: 30vh;
+  background-color: #f7f1eb;;
 }
 
 #divAbout {
-  padding-top: 150px;
-  background-color: white;
+  padding-top: 30vh;
+  background-color: #f7f1eb;;
 }
 
 #divContact {
-  padding-top: 130px;
-  background-color: white;
+  padding-top: 30vh;
+  background-color: #f7f1eb;;
 }
 
 
-.proyecto {
+.projects-header {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  margin-bottom: 1.5rem;
-  flex-wrap: wrap;
+  margin-bottom: 1rem;
 }
 
-.proyecto img {
-  width: 250px;
-  height: auto;
-  margin-right: 1rem;
-  border-radius: 8px;
+.projects-header h3 {
+  font-size: 2rem;
+  font-weight: 500;
+  margin: 0;
 }
 
-.contenido {
-  flex: 1;
-  min-width: 200px;
+.projects-header .see-all {
+  font-size: 1rem;
+  color: #333;
+  text-decoration: none;
+  position: relative;
 }
 
-.contenido h3 {
-  margin: 0 0 0.5rem 0;
-  font-size: 1.2rem;
+.projects-header .see-all::after {
+  content: '→';
+  margin-left: 0.5rem;
 }
 
-.contenido a {
-  color: #000000;
-  font-weight: bold;
-  text-decoration: underline;
+.carousel-scroll {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 1rem;
+  padding-bottom: 1rem;
+  scrollbar-width: none;
 }
 
-.contenido a:hover {
-  text-decoration: underline;
+
+.project-card {
+  scroll-snap-align: start;
+  flex: 0 0 80%;
+  border-radius: 16px;
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.3s;
 }
 
-#listaProyectos {
-  margin-top: 30px;
-  margin-bottom: 70px;
+.project-card img {
+  width: 100%;
+  height: 80vh;
+  display: block;
+  object-fit: cover;
 }
+
+.project-card .year {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  color: white;
+  font-size: 0.9rem;
+  background-color: rgba(0,0,0,0.4);
+  padding: 0.25rem 0.5rem;
+  border-radius: 6px;
+}
+
 
 #tituloAbout{
   width: 100%;
@@ -177,13 +202,21 @@ section {
   left: 50%;
   top: 50%;
 }
-
 #contenedorBoton {
   display: flex;
-  justify-content: center;
+  flex-direction: row;
+  width: 100%;
+  align-items: flex-start;
+  gap: 2rem;
   flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+
+.botonera {
+  display: flex;
+  flex-direction: column;
   gap: 10px;
-  margin-bottom: 20px;
 }
 
 .botonesAbout {
@@ -195,29 +228,34 @@ section {
   border-radius: 5px;
   transition: background-color 0.3s ease;
   font-family: 'Times New Roman', Times, serif;
+  width: 160px;
+  text-align: center;
 }
 
 .botonesAbout:hover {
   background-color: #5e0b0b;
 }
 
+.content-wrapper {
+  flex: 1;
+  min-width: 300px;
+  max-width: 600px;
+}
+
 .content-section {
+  width: 100%;
   display: none;
   padding: 15px;
   border-radius: 8px;
   background-color: transparent;
   font-family: 'Times New Roman', Times, serif;
   font-weight: bold;
-  max-width: 80%;
-  margin: 0 auto;
-  text-align: justify;
+  text-align: center;
 }
 
 .content-section.active {
   display: block;
 }
-
-
 
 #contenedorMail {
   display: flex;
