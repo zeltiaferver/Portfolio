@@ -11,35 +11,153 @@
 </head>
 <body>
   <header>
-    <span data-i18n="name">Zeltia Veres</span>
+    <span data-i18n="name"><img src="./img/logo2.jpg" id="logo"></span>
     <div id="translator">
       <button onclick="setLanguage('en')">ENG</button>
       <button onclick="setLanguage('es')">ESP</button>
-      <button onclick="setLanguage('gl')">GAL</button>
+      <button onclick="setLanguage('gal')">GAL</button>
     </div>
-    <nav>
-      <ul>
-        <li><a href="index.html" data-i18n="nav_home">Home</a></li>
-        <li><a href="./html/works.html" data-i18n="nav_projects">Projects</a></li>
-        <li><a href="./html/contacto.html" data-i18n="nav_contact">Contact</a></li>
-        <li><a href="./html/about.html" data-i18n="nav_about">About</a></li>
-      </ul>
-    </nav>
+   <nav>
+  <ul>
+    <li><a href="#divIndex" data-i18n="menu.home">Home</a></li>
+    <li><a href="#divWorks" data-i18n="menu.projects">Projects</a></li>
+    <li><a href="#divAbout" data-i18n="menu.about">About Me</a></li>
+    <li><a href="#divContact" data-i18n="menu.contact">Contact</a></li>
+  </ul>
+</nav>
+
   </header>
-  <main>
+
+  <section id="divIndex">
     <div id="textoIndex">
-    <h1 data-i18n="index_h1">Hi! I'm Zeltia! 🕹️</h1>
+    <h1 data-i18n="index_h1" id="hola">Hi! I'm Zeltia! 🕹️</h1>
     <h3 data-i18n="index_h3">developer  &  designer</h3>
     <p>
-      <a href="./html/about.html" class="saludo" data-i18n="index_link_about">Get to know me</a>
+      <a href="#divAbout" class="saludo" data-i18n="index_link_about">Get to know me</a>
       <span data-i18n="index_or">or</span>
-      <a href="./html/works.html" class="saludo" data-i18n="index_link_projects">explore my projects</a>!
+      <a href="#divWorks" class="saludo" data-i18n="index_link_projects">explore my projects</a>!
     </p>
+    
+    
 </div>
+</section>
 
-  
-</div>
-  </main>
+<section id="divWorks">
+   
+    <div id="listaProyectos">
+      <h3 data-i18n="projects_title">Last Projects! 💻</h3>
+
+    <div class="proyecto">
+        <a href="https://zeltiaferver.github.io/Portfolio/" target="_blank">
+          <img src="../img/portfolio.png" alt="Portfolio" />
+          <div class="contenido">
+            <h3 data-i18n="project_portfolio" class="tituloProyecto">This Portfolio!</h3>
+        </a>
+        <a href="https://github.com/zeltiaferver/Portfolio.git"  target="_blank" data-i18n="repositorio"><p>Repository</p></a>
+        
+    </div>
+      </div>
+
+      <div class="proyecto">
+        <a href="https://zeltiaferver.github.io/Proyecto3_D/" target="_blank">
+          <img src="../img/maps.png" alt="Maps" />
+          <div class="contenido">
+            <h3 data-i18n="projects_maps" class="tituloProyecto">Maps</h3>
+        </a>
+        <a href="https://github.com/zeltiaferver/Proyecto3_D.git"  target="_blank" data-i18n="repositorio"><p>Repository</p></a>
+    </div>
+      </div>
+
+      <div class="proyecto">
+        <a href="https://zeltiaferver.github.io/Proyecto2_D/" target="_blank">
+          <img src="../img/calculRedes.png" alt="Calculredes" />
+          <div class="contenido">
+            <h3 data-i18n="projects_calcul" class="tituloProyecto">Calculredes</h3>
+          </a>
+          <a href="https://github.com/zeltiaferver/Proyecto2_D.git"  target="_blank" data-i18n="repositorio"><p>Repository</p></a>
+        </div>
+      </div>
+
+      <div class="proyecto">
+        <a href="https://zeltiaferver.github.io/Memorium/" target="_blank">
+          <img src="../img/memorium.png" alt="Memorium" />
+          <div class="contenido">
+            <h3 data-i18n="projects_memorium" class="tituloProyecto">Memorium</h3>
+        </a>
+        <a href="https://github.com/zeltiaferver/Memorium.git" target="_blank" data-i18n="repositorio"><p>Repository</p></a>
+     </div>
+      </div>
+    </div>
+</section>
+
+
+
+<section id="divAbout">
+<h2 data-i18n="headline" id="tituloAbout">Get to know me a little more!</h2>
+  <div id="contenedorBoton">
+    <button class="botonesAbout" onclick="mostrarDiv('aboutText')" data-i18n="btn_about">About me!</button>
+    <button class="botonesAbout" onclick="mostrarDiv('educationText')" data-i18n="btn_education">Education</button>
+    <button class="botonesAbout" onclick="mostrarDiv('workText')" data-i18n="btn_work">Work experience</button>
+    <button class="botonesAbout" onclick="mostrarDiv('skillsText')" data-i18n="btn_skills">Skills</button>
+
+    
+
+    <div id="aboutText" class="content-section">
+      <h3 data-i18n="about_title">Junior Web Developer & Designer from Galicia, Spain.☀️</h3>
+      <p data-i18n="about_desc">
+        Hi! I'm Zeltia! I'm located in Spain and passionate about creating beautiful, functional websites.
+        I enjoy combining my background in Fine Arts with web development to deliver unique digital experiences.
+        Always eager to learn and grow in the tech world!
+      </p>
+    </div>
+
+    <div id="educationText" class="content-section">
+      <h3 data-i18n="edu_title1">High Technician degree in Web App Development</h3>
+      <p data-i18n="edu_desc1">IES San Andrés. 2024-Present</p>
+      <h3 data-i18n="edu_title2">Fine Arts Degree</h3>
+      <p data-i18n="edu_desc2">Salamanca University. 2020-2023</p>
+    </div>
+
+    <div id="workText" class="content-section">
+      <h3 data-i18n="work_title">Internship</h3>
+      <p data-i18n="work_desc">IES San Andrés. May-June 2025</p>
+    </div>
+
+    <div id="skillsText" class="content-section">
+      <h3 data-i18n="skills_hard">Hard Skills</h3>
+      <p data-i18n="skills_hard_list">Java, JavaScript, HTML, CSS, SQL, Linux, IT Admin</p>
+      <h3 data-i18n="skills_soft">Soft Skills</h3>
+      <p data-i18n="skills_soft_list">Critical and Creative Thinking, Team Working, Proactivity</p>
+    </div>
+  </div>
+</section>
+
+<section id="divContact">
+
+    <div id="contenedorMail">
+      <h3 id="contactoTexto" data-i18n="contact_text">Get in touch through social media or send me an email! 📨</h3>
+      <div id="contacto">
+        <a href="https://github.com/zeltiaferver" target="_blank">
+          <img id="github" class="redes" src="../img/githubIcon.png" />
+        </a>
+        <a href="https://www.linkedin.com/in/zeltia-ferreiro-veres" target="_blank">
+          <img id="linkedin" class="redes" src="../img/linkedinIcon.png" />
+        </a>
+        <img id="email" class="redes" src="../img/mailIcon.png" />
+      </div>
+      <div id="emailFormulario">
+        <form id="formulario">
+          <input type="text" name="user_name" placeholder="Your name" id="inputNombre" required />
+          <input type="email" name="user_email" placeholder="Your email" id="inputCorreo" required />
+          <textarea name="message" placeholder="Send me a message!✨" id="textareaMensaje" required></textarea>
+          <button type="submit" id="botonFormulario" data-i18n="form_send">Enviar</button>
+        </form>
+      </div>
+    </div>
+
+</section>
+
+
   <footer>
     <p>&copy; 2025 Zeltia Ferreiro</p>
   </footer>

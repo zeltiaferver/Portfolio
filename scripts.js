@@ -10,7 +10,7 @@ function setLanguage(lang) {
 
 async function loadTranslations(lang) {
   try {
-    // Ajusta la ruta si guardas los JSON en otra carpeta
+    
     const res = await fetch(`../translations/${lang}.json`);
     const translations = await res.json();
 
@@ -21,7 +21,7 @@ async function loadTranslations(lang) {
       }
     });
 
-    // También actualiza atributos `placeholder` si los hay
+    
     if (translations.inputNombre)
       document.getElementById("inputNombre").placeholder = translations.inputNombre;
     if (translations.inputCorreo)
