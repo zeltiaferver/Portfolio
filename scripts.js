@@ -83,3 +83,33 @@ function mostrarDiv(idDiv) {
       });
     }
 
+/**
+ * carrusel para proyectos
+ */
+
+  const track = document.getElementById('carouselTrack');
+  const prevBtn = document.getElementById('prev');
+  const nextBtn = document.getElementById('next');
+  const totalProjects = track.children.length;
+  let index = 0;
+
+  function updateCarousel() {
+    track.style.transform = `translateX(-${index * 100}%)`;
+  }
+
+  prevBtn.addEventListener('click', () => {
+    index = (index - 1 + totalProjects) % totalProjects;
+    updateCarousel();
+  });
+
+  nextBtn.addEventListener('click', () => {
+    index = (index + 1) % totalProjects;
+    updateCarousel();
+  });
+
+  // Opcional: carrusel automático
+  // setInterval(() => {
+  //   index = (index + 1) % totalProjects;
+  //   updateCarousel();
+  // }, 6000);
+
