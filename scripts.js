@@ -11,7 +11,7 @@ function setLanguage(lang) {
 async function loadTranslations(lang) {
   try {
     
-    const res = await fetch(`../translations/${lang}.json`);
+    const res = await fetch(`./translations/${lang}.json`);
     const translations = await res.json();
 
     document.querySelectorAll('[data-i18n]').forEach(el => {
