@@ -1,37 +1,62 @@
 {
- 
-  "nav_home": "Inicio",
-  "nav_projects": "Proyectos",
-  "nav_contact": "Contacto",
-  "nav_about": "Sobre mí",
-  "index_h1": "¡Hola! Soy Zeltia 🕹️",
+  
+  "menu": {
+    "home": "Inicio",
+    "projects": "Proyectos",
+    "about": "Sobre mí",
+    "contact": "Contacto"
+  },
+  "index_h1": "¡Hola! ¡Soy Zeltia! 🕹️",
   "index_h3": "desarrolladora  &  diseñadora",
-  "index_link_about": "¡Conóceme",
+  "index_link_about": "Conóceme",
   "index_or": "o",
   "index_link_projects": "explora mis proyectos",
-  "projects_title": "¡Últimos proyectos! 💻",
-  "projects_maps": "Maps",
-  "projects_calcul": "CalculRedes",
-  "projects_memorium": "Memorium",
-  "contact_text": "¡Contáctame por redes o envíame un email! 📨",
-  "form_send": "Enviar",
+  "projects_title": "Últimos proyectos",
+  "headline": "¡Conóceme un poco más!",
   "btn_about": "Sobre mí",
   "btn_education": "Educación",
   "btn_work": "Experiencia laboral",
   "btn_skills": "Habilidades",
-  "headline": "¡Conóceme un poco más!",
-  "about_title": "Desarrolladora y diseñadora web junior de Galicia, España.☀️",
-  "about_desc": "Soy Zeltia, desarrolladora junior con formación en Bellas Artes. Me encanta crear experiencias web accesibles, funcionales y bonitas.",
+  "about_title": "Desarrolladora Web Junior & Diseñadora de Galicia, España.☀️",
+  "about_desc": "¡Hola! Soy Zeltia, estoy en España y me apasiona crear sitios web bonitos y funcionales. Me gusta combinar mi formación en Bellas Artes con el desarrollo web para ofrecer experiencias digitales únicas. ¡Siempre con ganas de aprender y crecer en el mundo tech!",
   "edu_title1": "Técnico Superior en Desarrollo de Aplicaciones Web",
-  "edu_desc1": "IES San Andrés. 2024–Actualidad",
-  "edu_title2": "Grado en Bellas Artes",
-  "edu_desc2": "Universidad de Salamanca. 2020–2023",
+  "edu_desc1": "IES San Andrés. 2024-Presente",
+  "edu_title2": "Licenciatura en Bellas Artes",
+  "edu_desc2": "Universidad de Salamanca. 2020-2023",
   "work_title": "Prácticas",
-  "work_desc": "IES San Andrés. Mayo–Junio 2025",
+  "work_desc": "IES San Andrés. Mayo-Junio 2025",
   "skills_hard": "Habilidades técnicas",
-  "skills_hard_list": "Java, JavaScript, HTML, CSS, SQL, Linux, Administración de sistemas",
+  "skills_hard_list": "Java, JavaScript, HTML, CSS, SQL, Linux, Administración IT",
   "skills_soft": "Habilidades blandas",
-  "skills_soft_list": "Pensamiento crítico y creativo, trabajo en equipo, proactividad",
-  "project_portfolio": "Este Portfolio",
-  "repositorio": "Repositorio"
+  "skills_soft_list": "Pensamiento crítico y creativo, Trabajo en equipo, Proactividad",
+  "contact_text": "¡Contacta conmigo a través de redes sociales o envíame un correo! 📨",
+  "form_send": "Enviar",
+
+  "portfolioSection": {
+    "title": "Portfolio",
+    "desc": "Este sitio es mi proyecto personal favorito y más completo. Lo construí usando HTML, CSS y JavaScript, con el objetivo de mostrar no solo mis habilidades técnicas como desarrolladora, sino también mi formación en diseño y artes. Originalmente empecé con una paleta cálida basada en rojos, pero luego cambié a una base más limpia en blanco y negro con sutiles toques rojos, buscando un aspecto más profesional pero personal. Estoy especialmente orgullosa de algunos aspectos técnicos: integré EmailJS para manejar formularios de contacto de forma más fluida que un mailto básico, y reestructuré el sitio de múltiples páginas HTML a un diseño de una sola página con navegación suave por scroll. También desarrollé un carrusel interactivo que enlaza a una sección dedicada a proyectos, donde cada uno se detalla en un área desplazable. Todo está diseñado para brindar una experiencia clara, accesible y visualmente cuidada.",
+    "repo": "Repositorio",
+    "visit": "Visitar"
+  },
+
+  "mapsSection": {
+    "title": "Maps",
+    "desc": "Maps es una app web interactiva donde los usuarios pueden buscar ciudades predeterminadas o añadir sus propias direcciones, categorizando cada ubicación con un marcador codificado por colores según el tipo: puntos de interés, históricos, religiosos o culturales. La app incluye una leyenda con los colores y un botón para mostrar datos de terremotos de un feed XML para España. Construida con JavaScript, HTML, CSS, OpenStreetMap y la API Leaflet, fue mi primer proyecto con APIs, lo que supuso una experiencia muy enriquecedora. Desarrollada en un equipo de tres personas en cuatro sesiones de seis horas, nos centramos en crear una interfaz limpia e intuitiva, usando una paleta de tonos grises que complementa el mapa para un diseño cohesivo y fácil de usar.",
+    "repo": "Repositorio",
+    "visit": "Visitar"
+  },
+
+  "redesSection": {
+    "title": "CalcuRedes",
+    "desc": "CalcuRedes es una calculadora de redes diseñada para calcular datos clave de una IP, como máscaras de subred, wildcards, direcciones broadcast y detalles de subredes. Aunque el proyecto tuvo algunos retos técnicos y limitaciones de tiempo, fue una experiencia de aprendizaje valiosa. Construido con HTML, CSS y JavaScript, esta herramienta me ayudó a mí y a mis compañeros a profundizar en conceptos de redes. La interfaz tiene un diseño limpio en tonos azules y blancos, complementado con tipografía estilo pixel para darle un toque retro-tecnológico.",
+    "repo": "Repositorio",
+    "visit": "Visitar"
+  },
+
+  "memoriumSection": {
+    "title": "Memorium",
+    "desc": "Memorium fue mi primer proyecto como becaria en IES San Andrés, donde desarrollamos un juego de memoria en grupo durante dos semanas. Ninguno de nosotros tenía experiencia previa con JavaScript, así que el proyecto implicó mucha investigación y seguir numerosos tutoriales para aprender sobre la marcha. El juego presenta un estilo visual gótico y Souls-like, con varios tableros y modos de juego para mantener a los jugadores enganchados. Un divertido easter egg se activa si el nombre de usuario es \"snake\": en lugar del juego de memoria, aparece el clásico juego de la serpiente. Esto es un guiño a nuestra baraja de cartas temática de Metal Gear, que incluye personajes llamados Snake. A pesar de los desafíos de aprender JavaScript por primera vez, estoy orgullosa del progreso y las habilidades técnicas que desarrollé en este proyecto intenso y gratificante.",
+    "repo": "Repositorio",
+    "visit": "Visitar"
+  }
 }

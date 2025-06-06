@@ -1,37 +1,62 @@
 {
   
-  "nav_home": "Home",
-  "nav_projects": "Projects",
-  "nav_contact": "Contact",
-  "nav_about": "About",
+  "menu": {
+    "home": "Home",
+    "projects": "Projects",
+    "about": "About Me",
+    "contact": "Contact"
+  },
   "index_h1": "Hi! I'm Zeltia! 🕹️",
   "index_h3": "developer  &  designer",
   "index_link_about": "Get to know me",
   "index_or": "or",
   "index_link_projects": "explore my projects",
-  "projects_title": "Last Projects! 💻",
-  "projects_maps": "Maps",
-  "projects_calcul": "Calculredes",
-  "projects_memorium": "Memorium",
-  "contact_text": "Get in touch through social media or send me an email! 📨",
-  "form_send": "Send",
+  "projects_title": "Last projects",
+  "headline": "Get to know me a little more!",
   "btn_about": "About me!",
   "btn_education": "Education",
   "btn_work": "Work experience",
   "btn_skills": "Skills",
-  "headline": "Get to know me a little more!",
   "about_title": "Junior Web Developer & Designer from Galicia, Spain.☀️",
-  "about_desc": "I’m Zeltia, a junior developer and creative problem solver. I have a background in Fine Arts and enjoy creating beautiful, functional, and accessible web experiences.",
+  "about_desc": "Hi! I'm Zeltia! I'm located in Spain and passionate about creating beautiful, functional websites. I enjoy combining my background in Fine Arts with web development to deliver unique digital experiences. Always eager to learn and grow in the tech world!",
   "edu_title1": "High Technician degree in Web App Development",
-  "edu_desc1": "IES San Andrés. 2024–Present",
+  "edu_desc1": "IES San Andrés. 2024-Present",
   "edu_title2": "Fine Arts Degree",
-  "edu_desc2": "Salamanca University. 2020–2023",
+  "edu_desc2": "Salamanca University. 2020-2023",
   "work_title": "Internship",
-  "work_desc": "IES San Andrés. May–June 2025",
+  "work_desc": "IES San Andrés. May-June 2025",
   "skills_hard": "Hard Skills",
   "skills_hard_list": "Java, JavaScript, HTML, CSS, SQL, Linux, IT Admin",
   "skills_soft": "Soft Skills",
   "skills_soft_list": "Critical and Creative Thinking, Team Working, Proactivity",
-  "project_portfolio": "This Portfolio",
-  "repositorio": "Repository"
+  "contact_text": "Get in touch through social media or send me an email! 📨",
+  "form_send": "Send",
+
+  "portfolioSection": {
+    "title": "Portfolio",
+    "desc": "This site is my favorite and most complete personal project. I built it using HTML, CSS, and JavaScript, with the goal of showcasing not only my technical skills as a developer but also my background in design and the arts. I originally started with a warm red-based color palette, but later shifted to a cleaner black-and-white foundation with subtle red highlights, aiming for a more professional yet personal feel. I'm especially proud of a few technical aspects: I integrated EmailJS to handle contact forms more smoothly than a basic mailto, and I restructured the site from multiple HTML pages into a single-page layout with smooth scroll-based navigation. I also developed an interactive carousel that links to a dedicated projects section, where each project is detailed in its own scrollable area. Everything is designed to provide a clear, accessible, and visually thoughtful experience.",
+    "repo": "Repository",
+    "visit": "Visit"
+  },
+
+  "mapsSection": {
+    "title": "Maps",
+    "desc": "Maps is an interactive web app where users can search for predefined cities or add their own addresses, categorizing each location with a color-coded marker based on the type—such as points of interest, historical, religious, or cultural sites. The app includes a legend explaining the colors, and a button to display earthquake data from an XML feed covering Spain. Built using JavaScript, HTML, CSS, OpenStreetMap, and the Leaflet API, this was my first project working with APIs, which was a rewarding learning experience. Developed in a team of three during four sessions of six hours each, we focused on creating a clean and intuitive interface, using a grayscale color palette that complements the map’s tones for a cohesive and user-friendly design.",
+    "repo": "Repository",
+    "visit": "Visit"
+  },
+
+  "redesSection": {
+    "title": "CalcuRedes",
+    "desc": "CalcuRedes is a network calculator designed to compute key data from an IP address, such as subnet masks, wildcards, broadcast addresses, and subnet details. Although the project had some technical challenges and time constraints, it was a valuable learning experience. Built with HTML, CSS, and JavaScript, this tool helped me and my teammates deepen our understanding of networking concepts. The interface features a clean design with blue and white tones, complemented by pixel-style typography to give it a retro-tech feel.",
+    "repo": "Repository",
+    "visit": "Visit"
+  },
+
+  "memoriumSection": {
+    "title": "Memorium",
+    "desc": "Memorium was my first project as an intern at IES San Andrés, where we developed a memory game over two weeks in a group setting. None of us had prior experience with JavaScript, so the project involved extensive research and following many tutorials to learn as we built. The game features a gothic and Souls-like visual style, with multiple boards and game modes to keep players engaged. A fun easter egg activates if the username entered is \"snake\" — instead of the memory game, the classic Snake game appears. This nod is inspired by our Metal Gear-themed card deck, which includes characters named Snake. Despite the challenges of tackling JavaScript for the first time, I’m proud of the progress we made and the technical skills I developed during this intense and rewarding project.",
+    "repo": "Repository",
+    "visit": "Visit"
+  }
 }

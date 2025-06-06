@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Amarante&family=Lugrasimo&display=swap" rel="stylesheet" />
+  <title data-i18n="title">Zeltia's Portfolio</title>
+</head>
+<body>
+  <header>
+    <span data-i18n="name"><img src="../img/logo2.jpg" id="logo" alt="Logo"></span>
+    <div id="translator">
+      <button onclick="setLanguage('en')">ENG</button>
+      <button onclick="setLanguage('es')">ESP</button>
+      <button onclick="setLanguage('gal')">GAL</button>
+    </div>
+   <nav>
+  <ul>
+    <li><a href="../index.html#divIndex" data-i18n="menu.home">Home</a></li>
+    <li><a href="../index.html#divWorks" data-i18n="menu.projects">Projects</a></li>
+    <li><a href="../index.html#divAbout" data-i18n="menu.about">About Me</a></li>
+    <li><a href="../index.html#divContact" data-i18n="menu.contact">Contact</a></li>
+  </ul>
+</nav>
+
+  </header>
+
+<section id="portfolioSection">
+  <div class="textoProyectos">
+    <h1 class="tituloProyectos" data-i18n="portfolioSection.title">Portfolio</h1>
+    <p data-i18n="portfolioSection.desc">
+      This site is my favorite and most complete personal project.
+      I built it using HTML, CSS, and JavaScript, with the goal of showcasing not only my technical skills as a developer
+      but also my background in design and the arts.
+
+      I originally started with a warm red-based color palette, but later shifted to a cleaner black-and-white foundation with subtle red highlights,
+      aiming for a more professional yet personal feel.
+
+      I'm especially proud of a few technical aspects:
+      I integrated EmailJS to handle contact forms more smoothly than a basic mailto,
+      and I restructured the site from multiple HTML pages into a single-page layout with smooth scroll-based navigation.
+      I also developed an interactive carousel that links to a dedicated projects section,
+      where each project is detailed in its own scrollable area.
+
+      Everything is designed to provide a clear, accessible, and visually thoughtful experience.
+    </p>
+    <a href="https://github.com/zeltiaferver/Portfolio.git" class="link" target="_blank" rel="noopener"><h3 data-i18n="portfolioSection.repo">Repository</h3></a>
+    <a href="https://zeltiaferver.github.io/Portfolio/" target="_blank" class="link" rel="noopener"><h3 data-i18n="portfolioSection.visit">Visit</h3></a>
+    <img src="../img/portfolioColores.png" class="imgProy" alt="Portfolio color palette" />
+  </div>
+
+  <div class="fotosProyectos">
+    <img src="../img/portfolio.png" class="imgProy" alt="Portfolio screenshot" />
+  </div>
+</section>
+
+<section id="mapsSection">
+  <div class="fotosProyectos">
+    <img src="../img/maps-fullpage.png" class="imgProy" alt="Maps full page" />
+    <img src="../img/mapsColores.png" class="imgProy" alt="Maps color palette" />
+  </div>
+  <div class="textoProyectos">
+    <h1 class="tituloProyectos" data-i18n="mapsSection.title">Maps</h1>
+    <p data-i18n="mapsSection.desc">
+      Maps is an interactive web app where users can search for predefined cities or add their own addresses,
+      categorizing each location with a color-coded marker based on the type—such as points of interest,
+      historical, religious, or cultural sites. The app includes a legend explaining the colors,
+      and a button to display earthquake data from an XML feed covering Spain.
+
+      Built using JavaScript, HTML, CSS, OpenStreetMap, and the Leaflet API, this was my first project working with APIs,
+      which was a rewarding learning experience.
+
+      Developed in a team of three during four sessions of six hours each, we focused on creating a clean and intuitive interface,
+      using a grayscale color palette that complements the map’s tones for a cohesive and user-friendly design.
+    </p>
+    <a href="https://github.com/zeltiaferver/Proyecto3_D.git" class="link" target="_blank" rel="noopener"><h3 data-i18n="mapsSection.repo">Repository</h3></a>
+    <a href="https://zeltiaferver.github.io/Proyecto3_D/" target="_blank" class="link" rel="noopener"><h3 data-i18n="mapsSection.visit">Visit</h3></a>
+  </div>
+</section>
+
+<section id="redesSection">
+  <div class="textoProyectos">
+    <h1 class="tituloProyectos" data-i18n="redesSection.title">CalcuRedes</h1>
+    <p data-i18n="redesSection.desc">
+      CalcuRedes is a network calculator designed to compute key data from an IP address, such as subnet masks, wildcards, broadcast addresses,
+      and subnet details. Although the project had some technical challenges and time constraints, it was a valuable learning experience.
+
+      Built with HTML, CSS, and JavaScript, this tool helped me and my teammates deepen our understanding of networking concepts.
+      The interface features a clean design with blue and white tones, complemented by pixel-style typography to give it a retro-tech feel.
+    </p>
+    <a href="https://github.com/zeltiaferver/Proyecto2_D.git" class="link" target="_blank" rel="noopener"><h3 data-i18n="redesSection.repo">Repository</h3></a>
+    <a href="https://zeltiaferver.github.io/Proyecto2_D/" target="_blank" class="link" rel="noopener"><h3 data-i18n="redesSection.visit">Visit</h3></a>
+  </div>
+  <div class="fotosProyectos">
+    <img src="../img/calculRedes.png" class="imgProy" alt="CalcuRedes screenshot" />
+    <img src="../img/calcuredesColores.png" class="imgProy" alt="CalcuRedes color palette" />
+  </div>
+</section>
+
+<section id="memoriumSection">
+  <div class="fotosProyectos">
+    <img src="../img/memorium.png" class="imgProy" alt="Memorium screenshot" />
+    <img src="../img/memorium-tablero.png" class="imgProy" alt="Memorium board" />
+  </div>
+  <div class="textoProyectos">
+    <h1 class="tituloProyectos" data-i18n="memoriumSection.title">Memorium</h1>
+    <p data-i18n="memoriumSection.desc">
+      Memorium was my first project as an intern at IES San Andrés, where we developed a memory game over two weeks in a group setting.
+      None of us had prior experience with JavaScript, so the project involved extensive research and following many tutorials to learn as we built.
+
+      The game features a gothic and Souls-like visual style, with multiple boards and game modes to keep players engaged.
+      A fun easter egg activates if the username entered is "snake" — instead of the memory game, the classic Snake game appears.
+      This nod is inspired by our Metal Gear-themed card deck, which includes characters named Snake.
+
+      Despite the challenges of tackling JavaScript for the first time, I’m proud of the progress we made and the technical skills I developed
+      during this intense and rewarding project.
+    </p>
+    <a href="https://github.com/zeltiaferver/Memorium.git" class="link" target="_blank" rel="noopener"><h3 data-i18n="memoriumSection.repo">Repository</h3></a>
+    <a href="https://zeltiaferver.github.io/Memorium/" target="_blank" class="link" rel="noopener"><h3 data-i18n="memoriumSection.visit">Visit</h3></a>
+    <img src="../img/memoriumColores.png" class="imgProy" alt="Memorium color palette" />
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2025 Zeltia Ferreiro</p>
+</footer>
+<script src="../scripts.js" defer></script>
+</body>
+</html>
