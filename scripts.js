@@ -107,9 +107,4 @@ function mostrarDiv(idDiv) {
     updateCarousel();
   });
 
-  // Opcional: carrusel automático
-  // setInterval(() => {
-  //   index = (index + 1) % totalProjects;
-  //   updateCarousel();
-  // }, 6000);
-
+ 
